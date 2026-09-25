@@ -1,12 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My Page</title>
-      <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why is Messi the GOAT? · Ball Knowledge</title>
+    <meta name="description" content="A manual for Ronaldo fans. Why is Messi the GOAT? It's simple. Look at the picture.">
+    <meta name="theme-color" content="#060a13">
+    <meta name="color-scheme" content="dark">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Why is Messi the GOAT?">
+    <meta property="og:description" content="It's simple. Look at the picture.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/smash09x/ball_knowledge/main/assets/social-card.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Why is Messi the GOAT? Lionel Messi kissing the World Cup trophy.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐐</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
   </head>
-    <body class="bg-blue-100">
-      <p class="text-4xl text-blue-500 font-bold ">Why Messi is the Goat?</p>
-        <img class="rounded-lg" src="https://github.com/smash09x/ball_knowledge/blob/main/Messi_World_Cup.webp" alt="The Goat" width="600">
-      <p class="text-blue-500">Made By: Deez Nuts</p>
-    </body>
+
+  <body>
+    <!-- Icons, reused below with <use href="#..."> -->
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2l2.245 6.91h7.266l-5.878 4.27 2.245 6.91L12 15.82l-5.878 4.27 2.245-6.91-5.878-4.27h7.266z"/>
+      </symbol>
+      <symbol id="i-down" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12l7 7 7-7"/>
+      </symbol>
+      <symbol id="i-up" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7"/>
+      </symbol>
+      <symbol id="i-share" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/>
+      </symbol>
+    </svg>
+
+    <header class="topbar">
+      <a class="brand" href="#top">
+        <span class="brand__badge" aria-hidden="true">10</span>
+        <span>Ball Knowledge</span>
+      </a>
+      <button class="btn btn--ghost btn--small" type="button" data-share>
+        <svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>
+        <span class="only-wide">Send to a Ronaldo fan</span>
+        <span class="only-narrow">Share</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <!-- The question -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <p class="hero__stars" role="img" aria-label="Three stars, one for each of Argentina's World Cups: 1978, 1986 and 2022">
+            <svg class="icon"><use href="#i-star"/></svg>
+            <svg class="icon"><use href="#i-star"/></svg>
+            <svg class="icon hero__star--his"><use href="#i-star"/></svg>
+          </p>
+          <p class="eyebrow hero__eyebrow"><span class="only-wide">Ball Knowledge 101 ·</span> A manual for Ronaldo fans</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">Why is Messi</span>
+            <span class="hero__line">the <span class="gold-text">GOAT?</span></span>
+          </h1>
+          <p class="hero__lede">It's simple. <em>Look at the picture.</em></p>
+          <a class="scroll-cue" href="#exhibit-a" aria-label="Look at the picture">
+            <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- The answer -->
+      <section class="exhibit" id="exhibit-a" aria-labelledby="exhibit-title">
+        <div class="exhibit__rays" aria-hidden="true"></div>
+        <figure class="exhibit__figure">
+          <div class="exhibit__frame">
+            <img
+              src="Messi_World_Cup.webp"
+              width="1200"
+              height="900"
+              fetchpriority="high"
+              alt="Lionel Messi kissing the FIFA World Cup trophy while holding the Golden Ball, after winning the 2022 World Cup final">
+            <p class="stamp" aria-hidden="true">Case<br>closed</p>
+          </div>
+          <figcaption class="placard">
+            <div class="placard__main">
+              <p class="placard__kicker">Exhibit A</p>
+              <h2 class="placard__title" id="exhibit-title">The picture.</h2>
+              <p class="placard__text">Lionel Messi, world champion. Lusail Stadium, Qatar, 18&nbsp;December&nbsp;2022.</p>
+            </div>
+            <p class="placard__score">
+              <span class="placard__teams">ARG 3–3 FRA</span>
+              <span class="placard__pens">Argentina won 4–2 on penalties</span>
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Tickers -->
+      <div class="tapes">
+        <div class="tape tape--back" aria-hidden="true">
+          <ul class="tape__track">
+            <li>Look at the picture</li>
+            <li>Look at the picture</li>
+            <li>Look at the picture</li>
+            <li>Look at the picture</li>
+          </ul>
+        </div>
+        <div class="tape tape--front">
+          <ul class="tape__track">
+            <li>FIFA World Cup 2022</li>
+            <li>Copa América 2021</li>
+            <li>Finalissima 2022</li>
+            <li>Copa América 2024</li>
+            <li>Olympic gold 2008</li>
+            <li>U-20 World Cup 2005</li>
+            <li>8× Ballon d'Or</li>
+            <li>4× Champions League</li>
+            <li>10× La Liga</li>
+            <li>6× Golden Shoe</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- The rest of the evidence -->
+      <section class="section cabinet" id="cabinet" aria-labelledby="cabinet-title">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">The trophy cabinet</p>
+          <h2 class="section-title" id="cabinet-title">Still not convinced?</h2>
+          <p class="section-sub"><em>Fine.</em> Here's the rest of the evidence.</p>
+        </header>
+
+        <ul class="cabinet__grid">
+          <li class="stat stat--feature" data-reveal>
+            <p class="stat__kicker">The one that matters</p>
+            <h3 class="stat__trophy">FIFA World Cup</h3>
+            <ul class="chips">
+              <li>Qatar 2022</li>
+              <li>Golden Ball</li>
+              <li>2 goals in the final</li>
+            </ul>
+            <p class="stat__quip">The one trophy Ronaldo doesn't have.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="8">8</p>
+            <h3 class="stat__label">Ballon d'Or wins</h3>
+            <p class="stat__note">More than anyone in history.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="2">2</p>
+            <h3 class="stat__label">World Cup Golden Balls</h3>
+            <p class="stat__note">2014 and 2022. Nobody else has two.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="34">34</p>
+            <h3 class="stat__label">World Cup matches</h3>
+            <p class="stat__note">More than any player, ever.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="2">2</p>
+            <h3 class="stat__label">Copa Américas</h3>
+            <p class="stat__note">2021 and 2024.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="4">4</p>
+            <h3 class="stat__label">Champions Leagues</h3>
+            <p class="stat__note">2006, 2009, 2011 and 2015.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="10">10</p>
+            <h3 class="stat__label">La Liga titles</h3>
+            <p class="stat__note">All of them with Barcelona.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="91">91</p>
+            <h3 class="stat__label">Goals in 2012</h3>
+            <p class="stat__note">The calendar-year world record.</p>
+          </li>
+          <li class="stat" data-reveal>
+            <p class="stat__num" data-count="6">6</p>
+            <h3 class="stat__label">European Golden Shoes</h3>
+            <p class="stat__note">The most ever.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Every argument, answered -->
+      <section class="section objections" id="objections" aria-labelledby="objections-title">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Frequently made arguments</p>
+          <h2 class="section-title" id="objections-title">Objections?</h2>
+          <p class="section-sub"><em>Overruled.</em> Tap any argument for our detailed response.</p>
+        </header>
+
+        <div class="objections__list">
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">01</span><span class="objection__text">“But Ronaldo has more goals.”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">02</span><span class="objection__text">“But Ronaldo won five Champions Leagues.”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">03</span><span class="objection__text">“But Ronaldo won the Euros.”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">04</span><span class="objection__text">“But Messi had Xavi and Iniesta.”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">05</span><span class="objection__text">“But he lost the 2014 final. And the 2026 one.”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">06</span><span class="objection__text">“But the Nations League!”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">07</span><span class="objection__text">“But Ronaldo is taller.”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+          <details class="objection" data-reveal>
+            <summary><span class="objection__num">08</span><span class="objection__text">“SIUUUUU!”</span><span class="objection__icon" aria-hidden="true"></span></summary>
+            <a class="answer" href="#exhibit-a"><img src="Messi_World_Cup.webp" alt="" width="1200" height="900" loading="lazy"><span><span class="answer__verdict">Look at the picture.</span><span class="answer__hint">Back to Exhibit A</span></span></a>
+          </details>
+        </div>
+      </section>
+
+      <!-- Verdict -->
+      <section class="verdict" aria-labelledby="verdict-title">
+        <p class="eyebrow" data-reveal>The verdict</p>
+        <h2 class="verdict__title" id="verdict-title" data-reveal><span class="gold-text">GOAT.</span></h2>
+        <p class="verdict__sub" data-reveal>Case closed.</p>
+        <div class="verdict__actions" data-reveal>
+          <button class="btn btn--gold" type="button" data-share>
+            <svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>
+            Send this to a Ronaldo fan
+          </button>
+          <a class="btn btn--ghost" href="#exhibit-a">
+            <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
+            Look at the picture again
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Made By: <strong>Deez Nuts</strong></p>
+      <p class="footer__small">Ball Knowledge · Case closed since 18.12.2022</p>
+    </footer>
+
+    <p class="toast" role="status" aria-live="polite"></p>
+  </body>
 </html>
